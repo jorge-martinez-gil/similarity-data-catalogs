@@ -1,0 +1,195 @@
+@prefix :      <https://dcat.example.org/> .
+@prefix ex:    <https://dcat.example.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+
+ex:catalog
+  a dcat:Catalog ;
+  dcterms:title "Knowledge Graph Industrias Alegres"@en ;
+  dcterms:title "Grafo de Conocimiento Industrias Alegres"@es ;
+  rdfs:label "Knowledge Graph to control the industrial activity"@en ;
+  foaf:homepage <https://www.teaming-ai.eu/catalog> ;
+  dcterms:publisher ex:scch ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
+  dcat:dataset ex:dataset-001 , ex:dataset-002 , ex:dataset-003, ex:dataset-004 ;
+  .
+  
+ex:dataset-001
+  a dcat:Dataset ;
+  dcterms:title "Machine parameters"@en ;
+  dcterms:title "Parametros de la maquina"@es ;
+  dcat:keyword "accountability"@en, "transparency"@en;
+  dcat:keyword "responsabilidad"@es, "transparencia"@es;
+  dcterms:creator ex:alejandro-espert ;
+  dcterms:issued "2022-10-05"^^xsd:date ;
+  dcterms:modified "2022-10-15"^^xsd:date ;
+  dcat:contactPoint <https://www.teaming-ai.eu/somebody/contact> ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "2022-07-01"^^xsd:date ; 
+    dcat:endDate   "2022-09-30"^^xsd:date ;
+  ];
+  dcat:temporalResolution "P1D"^^xsd:duration ;
+  dcterms:spatial <http://sws.geonames.org/6695072/> ;
+  dcat:spatialResolutionInMeters "1.0"^^xsd:decimal ;
+  dcterms:publisher ex:industrias-alegre ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-W>  ;
+  dcat:distribution ex:dataset-001-csv ;
+  dcat:distribution ex:dataset-001-ttl ;
+  .
+  
+ex:dataset-002
+  a dcat:Dataset ;
+  dcterms:title "Imagiaaaaaanary dataset"@en ;
+  dcterms:title "Conjundddddto de datos imaginario"@es ;
+  dcat:keyword "accountability"@en, "transparency"@en, "payments"@en ;
+  dcat:keyword "responsabilidad"@es, "transparencia"@es, "pagos"@es ;
+  dcterms:creator ex:finance-employee-001 ;
+  dcterms:issued "2011-12-05"^^xsd:date ;
+  dcterms:modified "2011-12-15"^^xsd:date ;
+  dcat:contactPoint <http://dcat.example.org/transparency-office/contact> ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "2011-07-01"^^xsd:date ; 
+    dcat:endDate   "2011-09-30"^^xsd:date ;
+  ];
+  dcat:temporalResolution "P1D"^^xsd:duration ;
+  dcterms:spatial <http://sws.geonames.org/6695072/> ;
+  dcat:spatialResolutionInMeters "30.0"^^xsd:decimal ;
+  dcterms:publisher ex:finance-ministryaaaaaaaaa ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-W>  ;
+  dcat:distribution ex:dataset-002-csv ;
+  dcat:distribution ex:dataset-002-ttl ;
+  .
+  
+ex:dataset-003
+  a dcat:Dataset ;
+  dcterms:title "Imaginaryeeeeeee dataset"@en ;
+  dcterms:title "Conjunto de datoseeeeee imaginario"@es ;
+  dcat:keyword "accountabieeeeeelity"@en, "transparency"@en, "payments"@en ;
+  dcat:keyword "responsabilidad"@es, "transparencia"@es, "pagos"@es ;
+  dcterms:creator ex:finaneeeeeece-employee-001 ;
+  dcterms:issued "2011-12-05"^^xsd:date ;
+  dcterms:modified "2011-12-15"^^xsd:date ;
+  dcat:contactPoint <http://dcat.example.org/transparency-office/contact> ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "2011-07-01"^^xsd:date ; 
+    dcat:endDate   "2011-09-30"^^xsd:date ;
+  ];
+  dcat:temporalResolution "P1D"^^xsd:duration ;
+  dcterms:spatial <http://sws.geonames.org/6695072/> ;
+  dcat:spatialResolutionInMeters "30.0"^^xsd:decimal ;
+  dcterms:publisher ex:finance-ministry ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-W>  ;
+  dcat:distribution ex:dataset-003-csv ;
+  dcat:distribution ex:dataset-003-ttl ;
+  .
+  
+ex:dataset-004
+  a dcat:Dataset ;
+  dcterms:title "Machine parameters"@en ;
+  dcterms:title "Parametros de la maquina"@es ;
+  dcat:keyword "accountability"@en, "transparency"@en;
+  dcat:keyword "responsabilidad"@es, "transparencia"@es;
+  dcterms:creator ex:alejandro-espert ;
+  dcterms:issued "2022-10-05"^^xsd:date ;
+  dcterms:modified "2022-10-15"^^xsd:date ;
+  dcat:contactPoint <http://dcat.example.org/transparency-office/contact> ;
+  dcterms:temporal [ a dcterms:PeriodOfTime ;
+    dcat:startDate "2011-07-01"^^xsd:date ; 
+    dcat:endDate   "2011-09-30"^^xsd:date ;
+  ];
+  dcat:temporalResolution "P1D"^^xsd:duration ;
+  dcterms:spatial <http://sws.geonames.org/66950712/> ;
+  dcat:spatialResolutionInMeters "30.0"^^xsd:decimal ;
+  dcterms:publisher ex:fince-ministry ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso6394-1/en> ;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-W>  ;
+  dcat:distribution ex:dataset-004a-csv ;
+  dcat:distribution ex:dataset-004b-ttl ;
+  .
+  
+ex:dataset-001-csv
+  a dcat:Distribution ;
+  dcat:downloadURL <https://www.teaming-ai.eu/files/001.csv> ;
+  dcterms:title "CSV distribution of organigram 001"@en ;
+  dcterms:title "Distribución en CSV del organigram 001"@es ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "5126"^^xsd:nonNegativeInteger ;
+  .
+
+  ex:dataset-001-ttl
+  a dcat:Distribution ;
+  dcat:downloadURL <http://dcat.example.org/files/001.ttl> ;
+  dcterms:title "ttl distribution of dataset 001"@en ;
+  dcterms:title "Distribución en ttl del conjunto de datos 001"@es ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/turtle> ;
+  dcat:byteSize "8122"^^xsd:nonNegativeInteger ;
+  .
+  
+ex:dataset-002-csv
+  a dcat:Distribution ;
+  dcat:downloadURL <http://dcat.example.org/files/001.csv> ;
+  dcterms:title "CSV distribution of imaginary dataset 001"@en ;
+  dcterms:title "distribución en CSV del conjunto de datos imaginario 001"@es ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "5120"^^xsd:nonNegativeInteger ;
+  .
+  
+ex:dataset-003-csv
+  a dcat:Distribution ;
+  dcat:downloadURL <http://dcat.example.org/files/001.csv> ;
+  dcterms:title "CSV distribution of imaginary dataset 001"@en ;
+  dcterms:title "distribución en CSV del conjunto de datos imaginario 001"@es ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "5120"^^xsd:nonNegativeInteger ;
+  .
+  
+ex:dataset-004-csv
+  a dcat:Distribution ;
+  dcat:downloadURL <http://dcat.example.org/files/001.csv> ;
+  dcterms:title "CSV distribution of imaginary dataset 001"@en ;
+  dcterms:title "distribución en CSV del conjunto de datos imaginario 001"@es ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "5120"^^xsd:nonNegativeInteger ;
+  .
+  
+
+  
+ex:dataset-002-ttl
+  a dcat:Distribution ;
+  dcat:downloadURL <http://dcat.example.org/files/001.csv> ;
+  dcterms:title "CSV distribution of imaginary dataset 001"@en ;
+  dcterms:title "distribución en CSV del conjunto de datos imaginario 001"@es ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "5120"^^xsd:nonNegativeInteger ;
+  .
+  
+ex:dataset-003-ttl
+  a dcat:Distribution ;
+  dcat:downloadURL <http://dcat.example.org/files/001.csv> ;
+  dcterms:title "CSV distribution of imaginary dataset 001"@en ;
+  dcterms:title "distribución en CSV del conjunto de datos imaginario 001"@es ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "5120"^^xsd:nonNegativeInteger ;
+  .
+  
+ex:dataset-004-ttl
+  a dcat:Distribution ;
+  dcat:downloadURL <http://dcat.example.org/files/001.csv> ;
+  dcterms:title "CSV distribution of imaginary dataset 001"@en ;
+  dcterms:title "distribución en CSV del conjunto de datos imaginario 001"@es ;
+  dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "5120"^^xsd:nonNegativeInteger ;
+  .
+  
+ex:transparency-office
+  a foaf:Organization ;
+  rdfs:label "Transparency Office"@en ;
+.
