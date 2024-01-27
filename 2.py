@@ -69,7 +69,7 @@ def calculate_catalog_similarity(catalog1_file, catalog2_file):
     return overall_similarity
 
 # Example usage:
-catalog1_file = 'd2.ttl'
+catalog1_file = 'd1.ttl'
 catalog2_file = 'd2.ttl'
 
 similarity_score = calculate_catalog_similarity(catalog1_file, catalog2_file)
